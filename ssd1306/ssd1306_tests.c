@@ -244,7 +244,7 @@ void ssd1306_TestFPS() {
 
     char buff[64];
     fps = (float)fps / ((end - start) / 1000.0);
-    snprintf(buff, sizeof(buff), "~%d FPS", fps);
+    snlogPrintf(buff, sizeof(buff), "~%d FPS", fps);
    
     ssd1306_Fill(White);
     ssd1306_SetCursor(2, 2);
